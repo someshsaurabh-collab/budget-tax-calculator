@@ -109,36 +109,36 @@
         <!-- RESULTS SECTION -->
         <section id="results-section" class="mt-12 hidden">
              <h2 class="text-3xl font-extrabold text-center mb-8">Your Tax Summary</h2>
-             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Main Result Card -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center md:col-span-2">
-                    <h3 class="text-lg font-semibold text-gray-500 mb-2" id="result-regime-title">New Regime Tax</h3>
-                    <p class="text-5xl font-bold text-primary mb-2" id="total-tax">₹0</p>
-                    <p class="text-gray-600 mb-4" id="monthly-tax">(₹0 per month)</p>
+             <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <div id="summary-content-wrapper" class="w-full">
+                    <div class="text-center mb-8">
+                        <h3 class="text-lg font-semibold text-gray-500 mb-2" id="result-regime-title">New Regime Tax</h3>
+                        <p class="text-5xl font-bold text-primary mb-2" id="total-tax">₹0</p>
+                        <p class="text-gray-600 text-lg mb-4" id="monthly-tax">(₹0 per month)</p>
+                    </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left mt-6 pt-6 border-t">
-                        <div>
-                            <p class="text-sm text-gray-500">Annual Take-Home</p>
-                            <p class="font-bold text-lg" id="take-home">₹0</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 pt-8 border-t">
+                        <div class="text-center">
+                            <p class="text-sm text-gray-500 mb-2">Annual Take-Home</p>
+                            <p class="font-bold text-2xl" id="take-home">₹0</p>
                         </div>
-                        <div>
-                            <p class="text-sm text-gray-500">Monthly Take-Home</p>
-                            <p class="font-bold text-lg text-success" id="monthly-take-home">₹0</p>
+                        <div class="text-center">
+                            <p class="text-sm text-gray-500 mb-2">Monthly Take-Home</p>
+                            <p class="font-bold text-2xl text-success" id="monthly-take-home">₹0</p>
                         </div>
-                        <div>
-                            <p class="text-sm text-gray-500">Effective Tax Rate</p>
-                            <p class="font-bold text-lg" id="effective-rate">0%</p>
+                        <div class="text-center">
+                            <p class="text-sm text-gray-500 mb-2">Effective Tax Rate</p>
+                            <p class="font-bold text-2xl" id="effective-rate">0%</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Savings Card -->
-                <div id="savings-card" class="bg-green-600 text-white p-6 rounded-2xl shadow-lg text-center flex flex-col justify-center hidden">
+                <!-- Savings Card - positioned separately -->
+                <div id="savings-card" class="bg-green-600 text-white p-6 rounded-2xl shadow-lg text-center flex flex-col justify-center mt-8 hidden">
                     <h3 class="text-2xl font-bold">You Saved!</h3>
                     <p class="text-4xl font-extrabold my-2" id="savings-amount">₹0</p>
                     <p class="text-sm">under Budget 2026 vs last year!</p>
                 </div>
-                
              </div>
              <div class="bg-white p-6 rounded-2xl shadow-lg mt-8">
                     <h3 class="text-xl font-bold mb-4 text-center">Old vs New Regime Comparison</h3>
